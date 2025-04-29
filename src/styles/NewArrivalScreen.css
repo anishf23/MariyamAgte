@@ -1,0 +1,23 @@
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card img {
+    object-fit: cover;
+    height: 250px;
+  }
+  
+  .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    background-color: #f9f9f9;
+  }
+  

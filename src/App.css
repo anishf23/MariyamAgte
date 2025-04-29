@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+:root {
+  --main-color: #A4663B; /* Set your main color here */
+  --hover-color: #dd9460;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: var(--main-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: var(--main-color);
+}
+.btn-primary {
+  background-color: var(--main-color); 
+  border-color: var(--main-color);
+}
+.btn-primary:hover {
+  background-color: var(--hover-color); ;
+  border-color: var(--hover-color); ;
+}
+
+.custom-navbar {
+  background-color: var(--main-color) !important; /* Custom background color */
+  border-bottom: 2px solid var(--main-color); /* Optional: Add a border */
+ }
+
+.custom-navbar .navbar-brand {
+  font-weight: bold;
+  color: #fff !important;
+}
+
+.custom-navbar .nav-link {
+  color: #fff !important;
+}
+
+.custom-navbar .nav-link:hover {
+  color: var(--hover-color) !important;
+  border-color: var(--hover-color); /* Optional: Change color on hover */
+}
+
+.custom-btn {
+  background-color: var(--main-color) !important; /* Custom background color */
+  border-color: var(--main-color) !important; /* Custom border color */
+  color: #fff !important; /* Text color */
+}
+
+.custom-btn:hover {
+  background-color: var(--hover-color) !important; /* Darker color on hover */
+  border-color: var(--hover-color) !important;
+  color: #fff !important;
+}
+.custom-warning {
+  background-color: #fff !important;
+  color: var(--main-color) !important;
+}
+.custom-banner {
+  width: 100%;                /* Makes the image responsive */
+  height: auto;               /* Maintains aspect ratio */
+  object-fit: cover;          /* Ensures the image covers the space while maintaining aspect ratio */
+  display: block;             /* Removes any bottom space from the image */
+  margin: 0 auto;             /* Centers the image horizontally */
+  border-radius: 8px;         /* Optional: Add rounded corners */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

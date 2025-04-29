@@ -1,0 +1,43 @@
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .card img {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .card {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .carousel img {
+    object-fit: cover;
+    height: 500px;
+  }
+
+  /* Ensures images are responsive and fill the container */
+.carousel-inner img {
+  width: 100%;          /* Make the image take up full width */
+  height: auto;         /* Maintain aspect ratio */
+  object-fit: cover;    /* Ensures image covers the space without distortion */
+}
+
+@media (max-width: 768px) {
+  /* Optionally, you can reduce padding or margins for small screens */
+  .carousel-inner {
+    padding: 0;
+  }
+
+  .carousel-item img {
+    height: 250px; /* Adjust height for mobile view if necessary */
+  }
+}
+
+  
