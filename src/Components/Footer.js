@@ -12,7 +12,7 @@ const Footer = () => (
           <p>
             Mariyam Agate Headquarters<br />
             Teen Limdi, Chudival Chakla,<br />
-            khandokliya Pada, Khambhat<br />
+            Karbasia Pada, Khambhat<br />
             Gujarat, India - 388620<br />
             Email: info@mariyamagate.com
           </p>
