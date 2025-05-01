@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
   <footer className="text-center py-4 bg-light mt-5 border-top">
@@ -32,10 +33,10 @@ const Footer = () => (
         <div className="col-md-3 mb-3">
           <h5>Quick Links</h5>
           <ul className="list-unstyled">
-            <li><a href="/" style={{ color: '#A4663B' }}>Home</a></li>
-            <li><a href="/new-arrivals" style={{ color: '#A4663B' }}>All Products</a></li>
-            <li><a href="/about" style={{ color: '#A4663B' }}>About Us</a></li>
-            <li><a href="/contact"style={{ color: '#A4663B' }} >Contact Us</a></li>
+            <li><Link to="/" style={{ color: '#A4663B' }}>Home</Link></li>
+            <li><Link to="/new-arrivals" style={{ color: '#A4663B' }}>All Products</Link></li>
+            <li><Link to="/about" style={{ color: '#A4663B' }}>About Us</Link></li>
+            <li><Link to="/contact" style={{ color: '#A4663B' }}>Contact Us</Link></li>
           </ul>
         </div>
 
@@ -43,10 +44,10 @@ const Footer = () => (
         <div className="col-md-3 mb-3">
           <h5>Top Products</h5>
           <ul className="list-unstyled">
-            <li><a href="/new-arrivals" style={{ color: '#A4663B' }}>Bracelet</a></li>
-            <li><a href="/new-arrivals"style={{ color: '#A4663B' }} >Crystal Tree</a></li>
-            <li><a href="/new-arrivals"style={{ color: '#A4663B' }}>Laxmi Yantra Pyramid </a></li>
-            <li><a href="/new-arrivals"style={{ color: '#A4663B' }}>Cluster & Geodes</a></li>
+            <li><Link to="/new-arrivals" style={{ color: '#A4663B' }}>Bracelet</Link></li>
+            <li><Link to="/new-arrivals" style={{ color: '#A4663B' }}>Crystal Tree</Link></li>
+            <li><Link to="/new-arrivals" style={{ color: '#A4663B' }}>Laxmi Yantra Pyramid</Link></li>
+            <li><Link to="/new-arrivals" style={{ color: '#A4663B' }}>Cluster & Geodes</Link></li>
           </ul>
         </div>
       </div>
