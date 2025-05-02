@@ -10,6 +10,7 @@ import banner3 from '../images/banner_3.png';
 import banner4 from '../images/banner_4.png';
 import banner5 from '../images/banner_5.png';
 import banner6 from '../images/banner_6.png';
+import { Link } from 'react-router-dom';
 
 
 const HomeScreen = () => {
@@ -101,10 +102,11 @@ const HomeScreen = () => {
         <h2 style={{ fontSize: '18px', color: '#555', marginTop: '20px', lineHeight: '1.6' }}>Bulk Sales</h2>
         <h3 style={{ fontSize: '18px', color: '#555', marginTop: '20px', lineHeight: '1.6' }}>Wholesale Program</h3>
         <p style={{ fontSize: '18px', color: '#555', marginTop: '20px', lineHeight: '1.6' }}>Our wholesale program offers competitive wholesale pricing and bulk pricing on crystals of up to 50% OFF, super-simple online ordering, and fast delivery.</p>
-        <button  className="btn custom-btn"
-          onClick={() => window.location.href = '/contact'} // Link to wholesale page
+        <Link
+          to="/contact"
+          className="btn custom-btn"
           style={{
-            backgroundColor: '#A4663B', // Button color
+            backgroundColor: '#A4663B',
             color: 'white',
             border: 'none',
             padding: '15px 30px',
@@ -112,10 +114,13 @@ const HomeScreen = () => {
             cursor: 'pointer',
             borderRadius: '5px',
             marginTop: '20px',
+            display: 'inline-block',
+            textAlign: 'center',
+            textDecoration: 'none', // Remove underline
           }}
         >
           Shop Wholesale
-        </button>
+        </Link>
       </div>
 
 {/*Our Mission  */}
